@@ -1,0 +1,133 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 90vh !important;
+  width: 380px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: -2rem;
+}
+
+.welcome-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.welcome-text {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.create-account-btn,
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background-color 0.2s;
+}
+
+.create-account-btn {
+  background-color: #6c47ff;
+  color: white;
+}
+
+.create-account-btn:hover {
+  background-color: #5a3cd7;
+}
+
+.login-btn {
+  background-color: rgba(108, 71, 255, 0.2);
+  color: #6c47ff;
+}
+
+.login-btn:hover {
+  background-color: rgba(108, 71, 255, 0.3);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .welcome-container {
+    padding: 16px;
+    min-height: 75vh;
+  }
+
+  .welcome-content {
+    padding: 24px 16px;
+  }
+
+  .welcome-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome-container {
+    min-height: 80vh !important;
+    padding: 12px;
+  }
+
+  .welcome-content {
+    padding: 20px 12px;
+  }
+
+  .welcome-title {
+    font-size: 20px;
+  }
+
+  .welcome-text {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .create-account-btn,
+  .login-btn {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .welcome-container {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .welcome-title {
+    font-size: 18px;
+  }
+
+  .welcome-text {
+    font-size: 12px;
+  }
+
+  .create-account-btn,
+  .login-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
